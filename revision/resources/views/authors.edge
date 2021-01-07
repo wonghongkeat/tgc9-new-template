@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+
+</head>
+<body>
+  <section>
+    <div class="logo"></div>
+    <div class="title"></div>
+    <div class="subtitle">
+      <table>
+      <tr>
+      <th>id</th>
+      <th>name</th>
+      </tr>
+
+      @each(a in index)
+      <tr>
+      <td>{{a.id}}</td>
+      <td>{{a.first_name}}</td>
+      </tr>
+      @endeach
+
+      </table>
+    </div>
+  </section>
+</body>
+</html>

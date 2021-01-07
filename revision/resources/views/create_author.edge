@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+
+
+</head>
+<body>
+  <form method="POST">
+     {{csrfField()}}
+     <div>
+        <label class="form-label">firstname</label>
+        <input type="text" name="first_name" class="form-control"/>
+    </div>
+    <div>
+        <label class="form-label">lsatname</label>
+        <input type="text" name="last_name" class="form-control"/>
+    </div>
+    <div>
+        <label class="form-label">date</label>
+        <input type="date" name="dob" class="form-control"/>
+    </div>
+    <input type="submit" value="Add" class="btn btn-primary mt-3"/>
+
+
+  </form>
+
+</body>
+</html>

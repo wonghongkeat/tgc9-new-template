@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hello Adonis</title>
+  {{ style('style') }}
+
+</head>
+<body>
+  <section>
+    <div class="logo"></div>
+    <div class="title"></div>
+    <div class="subtitle">
+    <form method="POST">
+     {{ csrfField() }}
+    <label>please enter the latitude</label>
+     <input type='text' name='lat'></input>
+     <br>
+        <label>please enter the longtitude</label>
+     <input type='text' name='long'></input>
+     <br><br>
+     <label>please select the date</label>
+     <input type='date' name='date'></input>
+     <input type='submit'/>
+     </form>
+    </div>
+  </section>
+</body>
+</html>
